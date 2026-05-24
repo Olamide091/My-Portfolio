@@ -2,6 +2,7 @@
   "name": "novatech-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://olamide091.github.io/My-Portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
