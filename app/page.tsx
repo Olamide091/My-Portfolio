@@ -55,8 +55,8 @@ export default function Home() {
       <PageTransition>
 
         {/* ── HERO ────────────────────────────────── */}
-   <section className="relative min-h-[92vh] md:min-h-screen flex flex-col justify-center md:justify-end overflow-hidden"
-          style={{ paddingTop: "clamp(5rem,8vw,7rem)", paddingLeft: "var(--px)", paddingRight: "var(--px)", paddingBottom: "clamp(3rem,6vw,5rem)" }}>
+        <section className="relative md:min-h-screen flex flex-col md:justify-end justify-start overflow-hidden"
+          style={{ paddingTop: "var(--nav-h)", paddingLeft: "var(--px)", paddingRight: "var(--px)", paddingBottom: "clamp(2.5rem,6vw,5rem)" }}>
 
           {/* Ghost bg text */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bebas pointer-events-none select-none whitespace-nowrap"
@@ -98,7 +98,7 @@ export default function Home() {
           </div>
 
           {/* HERO TEXT */}
-          <div className="relative z-10 md:max-w-[58%]">
+          <div className="relative z-10 md:max-w-[58%] pt-6 md:pt-0">
             <motion.div {...mv(0.08)} className="flex items-center gap-3 mb-5 sm:mb-7">
               <div className="w-7 h-px bg-gradient-to-r from-blue-500 to-purple-500 flex-shrink-0" />
               <span className="text-[0.65rem] tracking-[0.22em] uppercase text-blue-400">Portfolio · 2026</span>
@@ -155,9 +155,9 @@ export default function Home() {
             </motion.div>
           </div>
 
-          {/* MOBILE PHOTO — small circle below text */}
-          <motion.div {...mv(0.3)} className="md:hidden flex justify-center mt-10">
-            <div className="relative w-44 h-44 rounded-full overflow-hidden border border-blue-500/20">
+          {/* MOBILE PHOTO — shown below text on mobile only */}
+          <motion.div {...mv(0.3)} className="md:hidden flex justify-center mt-6 mb-2">
+            <div className="relative w-36 h-36 rounded-full overflow-hidden border border-blue-500/20">
               <Image src="/profile.jpg" alt="Abolarinwa Ismail" fill className="object-cover object-top" style={{ filter: "grayscale(100%)" }} />
             </div>
           </motion.div>
