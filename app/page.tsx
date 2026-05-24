@@ -55,8 +55,8 @@ export default function Home() {
       <PageTransition>
 
         {/* ── HERO ────────────────────────────────── */}
-        <section className="relative min-h-screen flex flex-col justify-end overflow-hidden"
-          style={{ paddingTop: "var(--nav-h)", paddingLeft: "var(--px)", paddingRight: "var(--px)", paddingBottom: "clamp(3rem,6vw,5rem)" }}>
+   <section className="relative min-h-screen flex flex-col justify-center md:justify-end overflow-hidden"
+          style={{ paddingTop: "clamp(5rem,8vw,7rem)", paddingLeft: "var(--px)", paddingRight: "var(--px)", paddingBottom: "clamp(3rem,6vw,5rem)" }}>
 
           {/* Ghost bg text */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bebas pointer-events-none select-none whitespace-nowrap"
