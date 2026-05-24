@@ -55,7 +55,7 @@ export default function Home() {
       <PageTransition>
 
         {/* ── HERO ────────────────────────────────── */}
-   <section className="relative min-h-screen flex flex-col justify-center md:justify-end overflow-hidden"
+   <section className="relative min-h-[92vh] md:min-h-screen flex flex-col justify-center md:justify-end overflow-hidden"
           style={{ paddingTop: "clamp(5rem,8vw,7rem)", paddingLeft: "var(--px)", paddingRight: "var(--px)", paddingBottom: "clamp(3rem,6vw,5rem)" }}>
 
           {/* Ghost bg text */}
